@@ -45,7 +45,7 @@ public class Main {
             return;
         }
 
-        //outpur the result
+        //outpur the result , [0] [1] represent's it's index
         System.out.println("after swap : a = " + swappedValues[0] + ", " + "b = " + swappedValues[1]);
         scanner.close();
     }
