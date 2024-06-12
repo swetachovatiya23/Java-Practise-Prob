@@ -36,5 +36,12 @@ public class Main {
         System.out.println("Enter the number : ");
         int num = scanner.nextInt();
 
+        //chcek if the number is a palindrome
+        if(isPlalindrome(num)) {
+            System.out.println(num + "is a plaindrome");
+        }else {
+            System.out.println(num + "is not a palindrome");
+        }
+        scanner.close();
     }
 }
