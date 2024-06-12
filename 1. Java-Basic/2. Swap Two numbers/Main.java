@@ -27,5 +27,26 @@ public class Main {
 
         System.out.println("Enter second number : ");
         int b = scanner.nextInt();
+
+        //choose the method for swapping
+        System.out.println("Enter 1 to swap using arithmatic and Enter 2 to swap using XOR : ");
+        int choice = scanner.nextInt();
+
+        int[] swappedValues;
+
+        //perform the swapping based on user choice
+        if(choice == 1){
+            swappedValues = swapWithArith(a, b);
+        }else if(choice == 2){
+            swappedValues = swapWithXOR(a, b);
+        }else {
+            System.out.println("Invalid choice");
+            scanner.close();
+            return;
+        }
+
+        //outpur the result
+        System.out.println("after swap : a = " + swappedValues[0] + ", " + "b = " + swappedValues[1]);
+        scanner.close();
     }
 }
