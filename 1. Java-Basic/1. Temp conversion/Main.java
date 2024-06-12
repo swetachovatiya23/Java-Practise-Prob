@@ -17,10 +17,16 @@ public class Main{
         int choice = scanner.nextInt();
 
         //variables to hold the input tem and result
-        double inputtemp, resultTemp;
+        double inputTemp, resultTemp;
 
         switch (choice) {
-            
+            case 1:
+                System.out.println("Enter temprature in celsius : ");
+                inputTemp = scanner.nextDouble();
+                resultTemp = ctof(inputTemp);
+                System.out.println(inputTemp + " Celsius is" + resultTemp + "Fahrenheit.");
+                break;
+
         }
         scanner.close();
     }
