@@ -13,7 +13,7 @@ public class Main{
         //scanner class 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter tem. in F or C : ");
+        System.out.println("Enter 1 to convert Celsius to Fahrenheit or 2 to convert Fahrenheit to Celsius: ");
         int choice = scanner.nextInt();
 
         //variables to hold the input tem and result
@@ -24,7 +24,13 @@ public class Main{
                 System.out.println("Enter temprature in celsius : ");
                 inputTemp = scanner.nextDouble();
                 resultTemp = ctof(inputTemp);
-                System.out.println(inputTemp + " Celsius is" + resultTemp + "Fahrenheit.");
+                System.out.println(inputTemp + " Celsius is " + resultTemp + " Fahrenheit.");
+                break;
+            case 2:
+                System.out.println("Enter temprature in farhenheit : ");
+                inputTemp = scanner.nextDouble();
+                resultTemp = ftoc(inputTemp);
+                System.out.println(inputTemp + " Fahrenheit is " + resultTemp + " Celsius.");
                 break;
 
         }
