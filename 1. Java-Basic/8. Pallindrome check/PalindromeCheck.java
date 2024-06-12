@@ -2,50 +2,79 @@ import java.util.Scanner;
 
 public class PalindromeCheck {
 
-    // Method to check if a number is a palindrome
-    public static boolean isPalindrome(int number) {
-        // Negative numbers are not palindromes
-        if (number < 0) {
-            return false;
+    /* Iterative function to reverse digits of num*/
+
+    static int reverseDigits(int num)
+
+    {
+
+        int rev_num = 0;
+
+        while (num > 0) {
+
+            rev_num = rev_num * 10 + num % 10;
+
+            num = num / 10;
+
         }
 
-        // Find the divisor to extract the first digit
-        int divisor = 1;
-        while (number / divisor >= 10) {
-            divisor *= 10;
-        }
+        return rev_num;
 
-        while (number != 0) {
-            int leading = number / divisor; // Extract leading digit
-            int trailing = number % 10; // Extract trailing digit
-
-            // If the leading and trailing digits do not match, it's not a palindrome
-            if (leading != trailing) {
-                return false;
-            }
-
-            // Remove the leading and trailing digits and adjust the divisor
-            number = (number % divisor) / 10;
-            divisor /= 100;
-        }
-
-        return true;
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+     
 
-        // Prompt the user for input
-        System.out.print("Enter a number: ");
-        int num = scanner.nextInt();
+    /* Function to check if n is Palindrome*/
 
-        // Check if the number is a palindrome
-        if (isPalindrome(num)) {
-            System.out.println(num + " is a palindrome.");
-        } else {
-            System.out.println(num + " is not a palindrome.");
-        }
+    static int isPalindrome(int n)
 
-        scanner.close();
+    {
+
+     
+
+        // get the reverse of n
+
+        int rev_n = reverseDigits(n);
+
+     
+
+        // Check if rev_n and n are same or not.
+
+        if (rev_n == n)
+
+            return 1;
+
+        else
+
+            return 0;
+
     }
+
+     
+
+    //Driver program to test reverseDigits/
+
+    public static void  main(String []args)
+
+    {
+
+        int n = 4562;
+
+        System.out.println("Is " + n + " a Palindrome number? -> " +
+
+            (isPalindrome(n) == 1 ? "true" : "false"));
+
+     
+
+        n = 2002;
+
+         
+
+        System.out.println("Is " + n + " a Palindrome number? -> " +
+
+            (isPalindrome(n) == 1 ? "true" : "false"));
+ 
+
+    }
+ 
 }
