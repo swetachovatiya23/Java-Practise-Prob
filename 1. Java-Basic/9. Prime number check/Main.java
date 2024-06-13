@@ -3,11 +3,25 @@
 import java.util.*;
 
 public class Main{
-    public static boolean isnotPrime(int a) {
-        return a % 2 == 0;
-    }
-    public static boolean isPrime(int a) {
-        return !isnotPrime(a);
+    public static boolean isPrime(int number) {
+        if(number <= 1) {
+            return false;
+        }
+        if(number <= 3) {
+            return true;
+        }
+        if(number % 2 == 0 || number % 3 == 0) {
+            return false;
+        }
+
+        //chcek for the factores from 5 to the square root of number
+        //only chcek numbers of the form 6k +- 1
+        for(int i=5; i*i <= number; i += 6) {
+            if(number % i == 0 || number % (i+2) == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
 
@@ -19,7 +33,7 @@ public class Main{
         int num = scanner.nextInt();
 
         if(isPrime(num)) {
-            System.out.println(num + " is prime number");
+            System.out.println(num + " is a prime number");
         }else {
             System.out.println(num + " is not prime number");
         }
