@@ -30,6 +30,12 @@ public class Main{
         System.out.println("Enter a number to get it's fibonacci : ");
         int num = scanner.nextInt();
 
+        //print fibonacci
+        System.out.println("Fibonacci of " + num + " is ; ");
+        fibonacci(num);
+
+        scanner.close();
+
 
 
     }
