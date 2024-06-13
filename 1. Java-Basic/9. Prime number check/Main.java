@@ -7,20 +7,14 @@ public class Main{
         if(number <= 1) {
             return false;
         }
-        if(number <= 3) {
-            return true;
-        }
-        if(number % 2 == 0 || number % 3 == 0) {
-            return false;
-        }
-
-        //chcek for the factores from 5 to the square root of number
-        //only chcek numbers of the form 6k +- 1
-        for(int i=5; i*i <= number; i += 6) {
-            if(number % i == 0 || number % (i+2) == 0) {
+        
+        //chcek from 2 to n-1
+        for(int i = 2; i < number; i++) {
+            if(number % i == 0){
                 return false;
             }
-        }
+        } 
+
         return true;
     }
 

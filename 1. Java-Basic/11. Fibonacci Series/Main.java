@@ -27,11 +27,11 @@ public class Main{
         //scanner class
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a number to get it's fibonacci : ");
+        System.out.print("Enter a number to get it's fibonacci : ");
         int num = scanner.nextInt();
 
         //print fibonacci
-        System.out.println("Fibonacci of " + num + " is ; ");
+        System.out.print("Fibonacci of " + num + " is ; ");
         fibonacci(num);
 
         scanner.close();
