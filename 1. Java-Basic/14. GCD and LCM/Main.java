@@ -14,6 +14,10 @@ public class Main{
     }
 
     //method to calclulate LCM
+    public static int lcm(int a , int b) {
+        return a * (b/gcd(a, b)); //to avoid potential overflow
+    }
+
 
     public static void main(String args[]) {
         //scanner class
@@ -25,6 +29,14 @@ public class Main{
         System.out.println(("Enter the second number : "));
         int num2 = scanner.nextInt();
 
+        //calculate GCD and LCM
+        int gcdResult = gcd(num1, num2);
+        int lcmResult = lcm(num2, num2);
+
+        System.out.println(" The GCD of " + num1 + " and " + num2 + " is " + gcdResult);
+        System.out.println(" The LCM of " + num1 + " and " + num2 + " is " + lcmResult);
+
+        scanner.close();
 
     }
 }
