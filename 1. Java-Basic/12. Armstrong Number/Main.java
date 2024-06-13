@@ -20,7 +20,15 @@ public class Main{
         //scanner class
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Enter a number : ");
         int num = scanner.nextInt();
+
+        if(isArmstrong(num)) {
+            System.out.println(num + " is an Armstrong number");
+        }else {
+            System.out.println(num + " is not an Armstrong number");
+        }
+        scanner.close();
 
 
     }
