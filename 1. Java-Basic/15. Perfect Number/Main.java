@@ -26,6 +26,14 @@ public class Main {
         System.out.println("Enter a number : ");
         int num = scanner.nextInt();
 
+        //check if the number is a perfect number
+        if(perfectNum(num)){
+            System.out.println(num + " is perfect number");
+        }else {
+            System.out.println(num + " is not a perfect number");
+        }
+        scanner.close();
+
 
     }
 }
