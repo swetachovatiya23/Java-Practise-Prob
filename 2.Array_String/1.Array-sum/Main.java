@@ -1,8 +1,15 @@
 //calculate the sum of elementsin Array
 
+import java.util.*;
 public class Main{
     public static void main(String args[]) {
-        int[] arr = {1,2,3,4,5,6};
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of elements in array : ");
+        int n = scanner.nextInt();
+
+        System.out.println("Enter the elemets of array : ");
+        int[] arr = new int[n];
+
 
         //1. initialise variable to store the value
         int sum = 0;
