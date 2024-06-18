@@ -14,6 +14,16 @@ public class Main{
         }
         return true;
     }
+
+    //method to print all prime number in given range
+    public static void printPrimeRange(int start, int end){
+        for(int i= start; i<= end; i++){
+            if(isPrime(i)){
+                System.out.println(i + " ");
+            }
+        }
+        System.out.println();
+    }
     public static void main(String args[]){
         //scanner class
         Scanner scanner = new Scanner(System.in);
@@ -23,6 +33,9 @@ public class Main{
 
         System.out.println("Enter the end of the range : ");
         int end = scanner.nextInt();
+
+        //print prime number in the given range
+        
 
      
 
