@@ -12,7 +12,16 @@ public class Main{
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a string : ");
-        String str = scanner.nextLine();
+        String origional = scanner.nextLine();
+
+        //revrese a string
+        String reversed = reveString(origional);
+
+        //output 
+        System.out.println("Original String : " + origional);
+        System.out.println("Reversed string : " + reversed);
+
+        scanner.close();
 
 
 
