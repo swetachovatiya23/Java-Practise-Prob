@@ -19,5 +19,10 @@ public class Main{
         for(int i=0; i<n; i++){
             array[i] = scanner.nextInt();
         }
+
+        //take empty variable 
+        int duplicateValue = 0;
+
+        //iterate through array
     }
 }
