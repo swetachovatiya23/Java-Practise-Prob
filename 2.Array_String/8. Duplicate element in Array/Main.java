@@ -42,18 +42,8 @@ public class Main{
             array[i] = scanner.nextInt();
         }
 
-        //take empty variable 
-        int duplicateValue = Integer.MIN_VALUE;
-
-        //iterate through array
-        for(int i=0; i<n; i++){
-            if(array[i] == array[i+1]){
-                duplicateValue = array[i];
-            } 
-        }
-
         //print
-        printDuplicate(array);
+        findAndPrintDuplicates(array);
         scanner.close();
 
     }
