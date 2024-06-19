@@ -20,6 +20,18 @@ public class Main{
             array[i] = scanner.nextInt();
         }
 
-        
+        //have empty variable for smallest
+        int smallestValue = Integer.MAX_VALUE;
+
+        //iterate through array
+        for(int i=0; i<n; i++){
+            if(array[i] < smallestValue){
+                smallestValue = array[i];
+            }
+        }
+        //print the smallest value
+        System.out.println("Smallest value from array is : " + smallestValue);
+        scanner.close();
+
     }
 }
