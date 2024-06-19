@@ -45,7 +45,13 @@ public class Main{
         //find and remove duplicate elements;
         array = removeDuplicate(array);
 
-        
+        //print and update array
+        System.out.println("Array after removing duplicates : ");
+        for(int i : array) {
+            System.out.println(i + " ");
+        }
+        scanner.close();
+
 
 
 
