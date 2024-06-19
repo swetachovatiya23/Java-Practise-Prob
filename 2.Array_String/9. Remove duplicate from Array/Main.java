@@ -3,7 +3,7 @@
 import java.util.*;
 
 public class Main{
-    public static void removeDuplicate(int[] array){
+    public static int[] removeDuplicate(int[] array){
         int length = array.length;
 
         for(int i=0; i<length; i++){
@@ -15,13 +15,17 @@ public class Main{
                         array[k] = array[k + 1];
                     }
                     length--; //length will decrement
-                    
-                }else {
-                    newArray = array[i];
+                    j--; //adjust loop counter
                 }
             }
         }
+        //create a new array with unique elements
+        int[] newArray = new int[length];
+        System.arraycopy(array, 0, newArray, 0, length);
+        return newArray;
+
     }
+    
     public static void main(String args[]){
         //scanner class
         Scanner scanner = new Scanner(System.in);
