@@ -42,6 +42,11 @@ public class Main{
             array[i] = scanner.nextInt();
         }
 
+        //find and remove duplicate elements;
+        array = removeDuplicate(array);
+
+        
+
 
 
     }
