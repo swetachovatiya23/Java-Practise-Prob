@@ -22,6 +22,19 @@ public class Main{
         for(int i=0; i<n; i++){
             array[i] = scanner.nextInt();
         }
+
+        //getting empty variable to store lagest value
+        int largestValue = Integer.MIN_VALUE;
+
+        //itrate through array and find largest elemet
+        for(int i=0; i<n; i++){
+            if(array[i] > largestValue){
+                largestValue = array[i];
+            }
+        }
+        //print largest element 
+        System.out.println("The largest element is : " + largestValue);
+        scanner.close();
     }
 
 }
