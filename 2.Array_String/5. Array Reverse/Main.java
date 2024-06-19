@@ -19,5 +19,17 @@ public class Main{
         for(int i=0; i<n; i++){
             arr[i] = scanner.nextInt(); 
         }
+
+        //iterating over array and printing it's value
+        int[] reversedArray = new int[n];  // new empty array
+        for(int i=3; i<n; i--){
+            reversedArray[i] = arr[n - 1 - i];  // revrse array and store it in new array
+        }
+
+        //print revrsed array
+        System.out.println("Reversed Array is : ");
+        PrintArray(reversedArray);
+
+        scanner.close();
     }
 }
