@@ -3,6 +3,28 @@
 import java.util.*;
 
 public class Main{
+    public static void findAndPrintDuplicates(int[] array) {
+        // Set to store unique elements
+        Set<Integer> uniqueElements = new HashSet<>();
+        // Set to store duplicate elements
+        Set<Integer> duplicates = new HashSet<>();
+
+        // Iterate through the array
+        for (int element : array) {
+            // If the element is already in uniqueElements, it's a duplicate
+            if (!uniqueElements.add(element)) {
+                duplicates.add(element);
+            }
+        }
+
+        // Print the duplicate elements
+        if (duplicates.isEmpty()) {
+            System.out.println("No duplicate elements found.");
+        } else {
+            System.out.println("Duplicate elements in the array: " + duplicates);
+        }
+    }
+
     public static void main(String args[]){
         //scanner class
         Scanner scanner = new Scanner(System.in);
@@ -21,8 +43,18 @@ public class Main{
         }
 
         //take empty variable 
-        int duplicateValue = 0;
+        int duplicateValue = Integer.MIN_VALUE;
 
         //iterate through array
+        for(int i=0; i<n; i++){
+            if(array[i] == array[i+1]){
+                duplicateValue = array[i];
+            } 
+        }
+
+        //print
+        printDuplicate(array);
+        scanner.close();
+
     }
 }
