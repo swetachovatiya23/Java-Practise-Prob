@@ -14,7 +14,18 @@ public class Main {
             }
         }
         return matrix;
+    }
 
+    //method to transpose the matrix
+    public static int[][] transposeMatrix(int[][] matrix, int rows, int columns){
+        int[][] transMatrix = new int[columns][rows];
+        
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<columns; j++){
+                transMatrix[j][i] = matrix[i][j];
+            }
+        }
+        return transMatrix;
     }
     public static void main(String args[]){
         //scanner class
