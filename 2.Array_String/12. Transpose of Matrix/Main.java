@@ -9,7 +9,7 @@ public class Main {
 
         System.out.println("Enter the elements of matrix : ");
         for(int i=0; i<rows; i++){
-            for(int j=0; i<columns; j++){
+            for(int j=0; j<columns; j++){
                 matrix[i][j] = scanner.nextInt();
             }
         }
@@ -32,7 +32,7 @@ public class Main {
     public static void printMatrix(int[][] matrix, int rows, int columns){
         for(int i=0; i<rows; i++){
             for(int j=0; j<rows; j++){
-                System.out.println(matrix[i][j] + " ");
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
@@ -52,7 +52,13 @@ public class Main {
         int[][] matrix = readMatrix(scanner, rows, columns);
 
         //Transpose the matrix
-        int[][] transposedMatrix = transposeMatrix(matrix, rows, columns);
+        int[][] transMatrix = transposeMatrix(matrix, rows, columns);
+
+        //print the matrix
+        System.out.print("Transposed matrix is : ");
+        printMatrix(transMatrix, rows, columns);
+
+        scanner.close();
     }
 }
 
