@@ -24,11 +24,14 @@ public class Main{
     //Multiply the matrix
     int[][] resultMatrix = multiplyMatrix(matrix1, matrix2, rows, columns);
 
-    //print the resulting matric
+    //print the resulting matrix
+    System.out.println("Resulting matrix after multiplication: ");
+    printMatrix(resultMatrix, rows, columns);
 
-
-
+        scanner.close();
     }
+
+
     //method to read the matrices from user
     public static int[][] readMatrix(Scanner scanner, int rows, int columns){
         int[][] matrix = new int[rows][columns];
@@ -47,14 +50,14 @@ public class Main{
 
         for(int i=0; i<rows; i++){
             for(int j=0; j<columns; j++){
-                resultMatrix[i][j] = matrix1[i][j] + matrix2[i][j];
+                resultMatrix[i][j] = matrix1[i][j] * matrix2[i][j];
             }
         }
         return resultMatrix;
     }
 
     //method to print a matrix
-    public static int[][] printMatrix(int[][] matrix, int rows, int columns){
+    public static void printMatrix(int[][] matrix, int rows, int columns){
         for(int i=0; i<rows; i++){
             for(int j=0; j<columns; j++){
                 System.out.println(matrix[i][j] + " ");
