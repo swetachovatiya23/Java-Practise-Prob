@@ -14,6 +14,14 @@ public class Main{
     System.out.println("Enter the number of columns : ");
     int columns = scanner.nextInt();
 
+    //read the matrices from user
+    System.out.println("Enter the elements of the first matrix : ");
+    int[][] matrix1 = readMatrix(scanner, rows, columns);
+
+    System.out.println("Enter the elements of second matrix : ");
+    int[][] matrix2 = readMatrix(scanner, rows, columns);
+
+    //Multiply the matrix
 
 
     }
