@@ -36,3 +36,14 @@ public class Main{
         scanner.close();
     }
 }
+
+//if want to do sum of that char count add this :
+//int sum = 0;
+// for (int count : charCountArray) {
+//     sum += count;
+// }
+
+// // Print the sum
+// System.out.println("Sum of character counts: " + sum);
+
+// scanner.close()
