@@ -22,6 +22,10 @@ public class Main{
     int[][] matrix2 = readMatrix(scanner, rows, columns);
 
     //Multiply the matrix
+    int[][] resultMatrix = multiplyMatrix(matrix1, matrix2, rows, columns);
+
+    //print the resulting matric
+
 
 
     }
@@ -47,6 +51,16 @@ public class Main{
             }
         }
         return resultMatrix;
+    }
+
+    //method to print a matrix
+    public static int[][] printMatrix(int[][] matrix, int rows, int columns){
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<columns; j++){
+                System.out.println(matrix[i][j] + " ");
+            }
+        }
+        System.out.println();
     }
 
 }
