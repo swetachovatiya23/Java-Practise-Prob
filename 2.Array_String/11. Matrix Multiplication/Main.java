@@ -34,6 +34,19 @@ public class Main{
                 matrix[i][j] = scanner.nextInt();
             }
         }
+        return matrix;
+    }
+
+    //method to multiply two matrix
+    public static int[][] multiplyMatrix(int[][] matrix1, int[][] matrix2, int rows, int columns){
+        int[][] resultMatrix = new int[rows][columns];
+
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<columns; j++){
+                resultMatrix[i][j] = matrix1[i][j] + matrix2[i][j];
+            }
+        }
+        return resultMatrix;
     }
 
 }
