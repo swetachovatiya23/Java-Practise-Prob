@@ -3,11 +3,26 @@
 import java.util.*;
 
 public class Main{
+    //character count method
+    public static int[] characterCount(String str){
+        //create an array to store charecter count
+        int[] charCountArray = new int[256];
+
+        //iterate through each char in string
+        for(int i=0; i<str.length(); i++){
+            char c = str.charAt(i);
+            charCountArray[c]++;
+        }
+        return charCountArray;
+    }
     public static void main(String args[]) {
         //scanner class
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a String: ");
-        String str = scanner.nextLine();
+        String input = scanner.nextLine();
+
+        //call the charecter count method to get the counts
+        int[] charCount = characterCount(input);
     }
 }
