@@ -18,5 +18,14 @@ public class Main{
 
     }
     //method to read the matrices from user
-    
+    public static int[][] readMatrix(Scanner scanner, int rows, int columns){
+        int[][] matrix = new int[rows][columns];
+
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<columns; j++){
+                matrix[i][j] = scanner.nextInt();
+            }
+        }
+    }
+
 }
