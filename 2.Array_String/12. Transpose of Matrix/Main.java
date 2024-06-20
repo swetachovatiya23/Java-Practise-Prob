@@ -40,6 +40,9 @@ public class Main {
 
         //read the matrix from users 
         int[][] matrix = readMatrix(scanner, rows, columns);
+
+        //Transpose the matrix
+        int[][] transposedMatrix = transposeMatrix(matrix, rows, columns);
     }
 }
 
