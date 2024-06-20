@@ -24,5 +24,15 @@ public class Main{
 
         //call the charecter count method to get the counts
         int[] charCount = characterCount(input);
+
+        //print the charecter count
+        System.out.println("Charecter counts : ");
+
+        for (int i = 0; i < charCount.length; i++) {
+            if (charCount[i] > 0) {
+                System.out.println((char) i + ": " + charCount[i]);
+            }
+        }
+        scanner.close();
     }
 }
