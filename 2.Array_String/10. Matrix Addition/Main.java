@@ -11,7 +11,17 @@ public class Main{
         System.out.println("Enter the number of rows : ");
         int rows = scanner.nextInt();
         System.out.println("Enter the number of columns : ");
-        int column = scanner.nextInt();
+        int columns = scanner.nextInt();
+
+        //read the matrices
+        System.out.println("Enter the elements of the first matrix: ");
+        int[][] matrix1 = readMatrix(scanner, rows, columns);
+
+        System.out.println("Enter the elements of second Matrix: ");
+        int[][] matrix2 = readMatrix(scanner, rows, columns);
+
+        //Add the matricies
+        
     }
 }
 
