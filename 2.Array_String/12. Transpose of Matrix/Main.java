@@ -27,6 +27,16 @@ public class Main {
         }
         return transMatrix;
     }
+
+    //print the transposed matrix
+    public static void printMatrix(int[][] matrix, int rows, int columns){
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<rows; j++){
+                System.out.println(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String args[]){
         //scanner class
         Scanner scanner = new Scanner(System.in);
