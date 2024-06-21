@@ -21,6 +21,14 @@ public class Main{
         for(int i=0; i<str2.length(); i++) {
             charCount[str2.charAt(i)]--;
         }
+
+        //check if all counts are zero
+        for(int count : charCount) {
+            if(count != 0) {
+                return false;
+            }
+        }
+        return true;
     }
     public static void main(String args[]){
         //scanner class
