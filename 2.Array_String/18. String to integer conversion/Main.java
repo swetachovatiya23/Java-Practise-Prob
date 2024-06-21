@@ -3,6 +3,9 @@
 import java.util.*;
 
 public class Main{
+    public static int converStringToInt(String str) throws NumberFormatException {
+        return Integer.parseInt(str);
+    }
     public static void main(String args[]){
         //scanner class
         Scanner scanner = new Scanner(System.in);
