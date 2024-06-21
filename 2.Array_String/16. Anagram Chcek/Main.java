@@ -3,6 +3,12 @@
 import java.util.*;
 
 public class Main{
+    public static boolean isAnagrams(String str1, String str2){
+        //check length
+        if(str1.length() != str2.length()){
+            return false;
+        }
+    }
     public static void main(String args[]){
         //scanner class
         Scanner scanner = new Scanner(System.in);
@@ -13,6 +19,6 @@ public class Main{
         System.out.println("Enter second String : ");
         String str2 = scanner.nextLine();
 
-        
+
     }
 }
