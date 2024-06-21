@@ -13,6 +13,11 @@ public class Main{
         System.out.println("Enter the substring you want : ");
         String subStr = scanner.nextLine();
 
+        if(str == subStr){
+            System.out.println("Substring exists in String");
+        }else {
+            System.out.println("String doesn't have Substring");
+        }
         
     }
 }
