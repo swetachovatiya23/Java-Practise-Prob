@@ -14,6 +14,12 @@ public class Main{
         System.out.println("Enter the string : ");
         String str = scanner.nextLine();
 
-       
+        //output
+        if(palindrome(str) == str){
+            System.out.println("It is Palindrome");
+        }else{
+            System.out.println("It's not palindrome");
+        }
+        scanner.close();
     }
 }
