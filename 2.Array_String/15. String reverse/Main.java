@@ -9,6 +9,12 @@ public class Main{
     }
 
     public static void main(String args[]){
-        
+        //scanner class
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your string : ");
+        String str = scanner.nextLine();
+
+        //print reverse
     }
 }
