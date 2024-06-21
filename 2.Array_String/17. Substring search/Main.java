@@ -19,12 +19,13 @@ public class Main{
         //check if the substring exists in the main string
         boolean result = subString(str, subStr);
 
-        
+        //output
         if(result){
             System.out.println("Substring exists in String");
         }else {
             System.out.println("String doesn't have Substring");
         }
+        scanner.close();
         
     }
 }
