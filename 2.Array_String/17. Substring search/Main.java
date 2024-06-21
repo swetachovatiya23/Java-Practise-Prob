@@ -3,6 +3,9 @@
 import java.util.*;
 
 public class Main{
+    public static boolean subString(String str, String subStr){
+        return str.contains(subStr);
+    }
     public static void main(String args[]){
         //scanner class
         Scanner scanner = new Scanner(System.in);
@@ -13,7 +16,11 @@ public class Main{
         System.out.println("Enter the substring you want : ");
         String subStr = scanner.nextLine();
 
-        if(str == subStr){
+        //check if the substring exists in the main string
+        boolean result = subString(str, subStr);
+
+        
+        if(result){
             System.out.println("Substring exists in String");
         }else {
             System.out.println("String doesn't have Substring");
