@@ -16,5 +16,7 @@ public class Main{
         String str = scanner.nextLine();
 
         //print reverse
+        String reverseString = reverse(str);
+        System.out.println("Reverse string is : " + reverseString);
     }
 }
