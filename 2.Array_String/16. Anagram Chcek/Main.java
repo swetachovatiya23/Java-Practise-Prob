@@ -8,6 +8,19 @@ public class Main{
         if(str1.length() != str2.length()){
             return false;
         }
+        
+        //create array to count the frequency
+        int[] charCount = new int[256];
+
+        //count charecter in the first string
+        for(int i=0; i< str1.length(); i++){
+            charCount[str1.charAt(i)]++;
+        }
+
+        //substract the count for character in the second string
+        for(int i=0; i<str2.length(); i++) {
+            charCount[str2.charAt(i)]--;
+        }
     }
     public static void main(String args[]){
         //scanner class
