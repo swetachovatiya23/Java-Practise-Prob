@@ -40,6 +40,13 @@ public class Main{
         System.out.println("Enter second String : ");
         String str2 = scanner.nextLine();
 
+        //chcek if the strings are anagrams
+        boolean result = isAnagrams(str1, str2);
+
+        //print the result
+        System.out.println(result ? "Yes it is Anagram" : "No it is not Anagram");
+
+        scanner.close();
 
     }
 }
