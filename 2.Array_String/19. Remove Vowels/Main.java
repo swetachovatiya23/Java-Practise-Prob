@@ -12,11 +12,11 @@ public class Main{
                 noVowels.append(c); //Append no vowel charecter
             }
         }
-        return 
+        return noVowels.toString();
     }
 
     public static boolean isVowel(char c){
-        return "aeiouAEIOU".indexof(c) != -1;
+        return "aeiouAEIOU".indexOf(c) != -1;
     }
     public static void main(String args[]){
         //scanner class
