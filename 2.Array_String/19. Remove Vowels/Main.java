@@ -33,7 +33,6 @@ public class Main{
         System.out.println("String after removing the vowels : " +result);
 
         scanner.close();
-
         
     }
 }
