@@ -37,9 +37,7 @@ public class Main{
         //Display the result
         System.out.println("String after removing the vowels : " +result);
 
-         //Display the result
-         System.out.println("String after removing the vowels : " +result);
-
+        
 
     }
 }
