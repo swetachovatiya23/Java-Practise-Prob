@@ -34,8 +34,5 @@ public class Main{
 
         scanner.close();
         
-        //Display the result
-        System.out.println("String after removing the vowels : " +result);
-
     }
 }
