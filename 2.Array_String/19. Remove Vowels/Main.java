@@ -34,6 +34,8 @@ public class Main{
 
         scanner.close();
 
+                //Display the result
+                System
     
         
     }
